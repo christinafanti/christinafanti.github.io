@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contact - BestFest</title>
+  <link href="bestfest.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/zuz6nco.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <meta charset="utf-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <meta name="description" content="Have a question or just want to reach out to the BestFest team? Contact us here.">
+  <meta name="keywords" content="music, music festivals, live music, contact">
+
+  <style>
+    nav a {
+      color: #994B00;
+    }
+    nav a:hover {
+      background-color: #D58B43;
+    }
+    nav a.active {
+      background-color: #994B00;
+    }
+
+    .footer {
+      background-color: #BA6718;
+    }
+    .footer a:hover {
+      background-color: #FAB97A; 
+      color: #6A3400;
+    }
+
+    @media (max-width: 786px) {
+      .row-3    { grid-template-columns: repeat(3, 100%);
+                  grid-template-rows: auto; }
+      .row3-1   { grid-area: 1/2; }  
+      .row3-2   { grid-area: 2/2; }
+      .row3-3   { grid-area: 3/2; }  
+      input[type="submit"]  { font-size: 70%; }      
+    }
+
+    @media (max-width: 900px) {
+      .container  { width: 100%;
+                    margin: 0;
+                    padding-top: 150px; }
+    }
+  </style>
+</head>
+
+<body style="background-color: #FAB97A;">
+  
+<header>
+  <div class="bg-img" style="background-image: url(logo-o.gif);">
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a> 
+      <a href="guide.html">Festival Guide</a> 
+      <a href="news.html">News</a>
+      <a href="festfromhome.html">#FestFromHome</a>
+      <a href="listen.html">Listen</a> 
+      <a class="active" href="contact.html">Contact</a>  
+    </nav>
+  </div>
+</div>
+</header>
+
+<main>
+  <div class="row1" style="padding: 10% 10% 10%; background-image: url(chella2.jpg);">
+      <h2>CONTACT US</h2>
+
+      <h3>Have a question? Need support?</h3>
+      <p style="line-height: 30px;">Please email us at:<br><br>
+      <strong><em><a href='mailto:admin@bestfest.com'>admin@bestfest.com</a></em></strong></p>
+  </div>
+
+<div class="row2-holder">
+  <h2>LEAVE US YOUR FEEDBACK</h2>
+  <div class="form-container">
+      <div class="form-field">
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php" target="_blank">
+           <label for="FirstName">First Name:</label>
+           <input type="text" name="FirstName" id="FirstName" required="required">
+
+           <label for="LastName">Last Name:</label>
+           <input type="text" name="LastName" id="LastName" required="required">
+
+           <label for="EmailAddress">E-mail:</label>
+           <input type="email" name="EmailAddress" id="EmailAddress" required="required">
+
+           <label for="Comments">Comments:</label>
+           <textarea name="Comments" id="Comments"
+             rows="2" cols="20" required="required"></textarea>
+           <input type="submit" value="SUBMIT" class="row3-button">
+          </form>
+      </div>
+  </div>
+</div>
+
+<div class="row-3">
+  <div class="row3-1" style="background-image: url(odesza.jpg);">
+      <h2 class="row-3-h2">FESTIVAL GUIDE</h2>
+      <p class="row-3-p">Looking for your next festival? Find all the information you need from lineups and dates to location and ticket prices.</p>
+    <a href="guide.html" class="row3-button">FESTIVAL GUIDE <i class='fas fa-angle-right'></i></a>
+  </div>
+  <div class="row3-2" style="background-image: url(ff1.jpg);">
+      <h2 class="row-3-h2">NEWS</h2>
+      <p class="row-3-p">Read up on the latest news about festivals, lineup and tour announcements, music releases and more.</p>
+    <a href="news.html" class="row3-button">NEWS <i class='fas fa-angle-right'></i></a>
+  </div>
+  <div class="row3-3" style="background-image: url(orange10.jpg);">
+      <h2 class="row-3-h2">LISTEN</h2>
+      <p class="row-3-p">Check out our curated playlists. We have everything from new releases and top tracks to lineup-based playlists.</p>
+      <a href="listen.html" class="row3-button">LISTEN <i class='fas fa-angle-right'></i></a>
+  </div>
+</div>
+</main>
+
+
+<div class="footer">
+  <small><em>Copyright &copy; 2020 BestFest</em><br>
+  <a href='mailto:admin@bestfest.com'>admin@bestfest.com</a></small>
+</div>
+
+</body>
+</html>
