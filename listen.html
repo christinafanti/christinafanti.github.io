@@ -29,6 +29,10 @@
       color: #013741;
     }
 
+    .row1 h4 {
+        font-size: 18px;
+    }
+
     @media (max-width: 786px) {
       .leftcolumn           { width: 100%; }
       .middlecolumn         { width: 100%; }
@@ -44,6 +48,56 @@
       .row3-1   { grid-area: 1/2; }  
       .row3-2   { grid-area: 2/2; }
       .row3-3   { grid-area: 3/2; }  
+
+      .row1 h2 {
+        font-size: 14vw;
+        padding-top: 20px;
+      }
+
+      .row1 h3 {
+        font-size: 11vw;
+      }
+
+      .row1 h4 {
+        font-size: 8vw;
+      }
+
+
+      .formcontainer {
+        width: auto;
+      }
+
+      form {
+        display: block;
+        text-align: center;
+      }
+
+      input[type="submit"] {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+
+      label {
+        display: block;
+      }
+
+      textarea {
+        display: block;
+        margin: auto;
+      }
+
+      input[type="radio"] {
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+
+      .some-class label{
+        padding: 0px 1em 0px 1em;
+      }
     }
 
 	@media (max-width: 900px) {
@@ -74,7 +128,7 @@
 
 <main>
   <div class="row1" style="background-image: url(blue6.jpg);">
-    <h2 style="font-size: 80px;">CHECK OUT FRESH TRACKS + NEW MUSIC VIDEOS</h2>
+    <h2 style="">CHECK OUT FRESH TRACKS + NEW MUSIC VIDEOS</h2>
   </div>
 
 <div class="hold" style="background-color: #2C7583">
@@ -142,7 +196,7 @@
 
 <div class="row-1">
   <div class="row1" style="background-image: url(blue4.jpg); padding: 8% 8% 8%;">
-    <h2 style="font-size: 80px;">STAY UPDATED!<BR>READ UP ON THE LATEST MUSIC NEWS</h2>
+    <h2 style="">STAY UPDATED!<BR>READ UP ON THE LATEST MUSIC NEWS</h2>
   </div>
 </div>
 
@@ -189,7 +243,7 @@
 
 <div class="row-1">
   <div class="row1" style="background-image: url(blue1.jpg); padding: 8% 8% 8%;">
-    <h2 style="font-size: 80px;">DIVE INTO ONE OF OUR AWESOME PLAYLISTS</h2>
+    <h2 style="">DIVE INTO ONE OF OUR AWESOME PLAYLISTS</h2>
   </div>
 </div>
 
@@ -229,8 +283,8 @@
 </div>
 
 <div class="row1" style="background-image: url(wheel.jpg); height: auto;padding: 5% 8% 8%; margin-bottom: 2px;">
-      <h2 style="margin: 0px 0 30px 0;">HAVE A SONG SUGGESTION?</h2>
-      <h3 style="margin: 0 0 20px 0;">Send it in below!</h3> 
+      <h3 style="margin-bottom: 20px; font-family: azo-sans-uber, sans-serif; font-weight: 400; font-style: normal;">HAVE A SONG SUGGESTION?</h3>
+      <h4 style="margin: 0 0 20px 0;">Send it in below!</h4> 
 
       <div class="form-container" style="background-color: rgba(1, 55, 65, 0.8);">
         <div class="form-field">
@@ -255,7 +309,7 @@
               <div class="some-class">
                 <input type="radio" class="radio" name="ChoiceType" id="song" value="song" required="required">
                 <label for="song">Song</label>
-
+                <br>
                 <input type="radio" class="radio" name="ChoiceType" value="musicVideo" id="musicVideo">
                 <label for="musicVideo">Music Video</label>
               </div>
